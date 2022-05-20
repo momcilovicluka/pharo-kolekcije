@@ -6,7 +6,7 @@ testTop
 	aStek push: 1.
 	aStek push: 2.
 	self assert: aStek top equals: 2.
-	self assert: aStek size equals: 2.
+	self assert: aStek velicina equals: 2.
 	self assert: aStek top equals: 2.
-	self assert: aStek size equals: 2.
+	self assert: aStek velicina equals: 2.
 	

@@ -11,6 +11,6 @@ testPop
 	self assert: elementSaSteka equals: element.
 	
 	aStek pop.
-	self assert: aStek size equals: 0.
+	self assert: aStek isEmpty.
 	
 	
