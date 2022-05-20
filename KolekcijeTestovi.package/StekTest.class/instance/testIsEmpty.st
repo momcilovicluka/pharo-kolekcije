@@ -1,12 +1,13 @@
 tests
 testIsEmpty
-	| aStek |
+	| aStek sizeEquals0|
 	aStek := Stek new.
-	self assert: aStek isEmpty equals: [aStek size equals: 0].
+	sizeEquals0 := [ aStek isEmpty].
+	self assert: aStek isEmpty.
 	aStek push: 1.
-	self assert: aStek isEmpty equals: [aStek size equals: 0].
+	self assert: aStek isEmpty.
 	aStek push: 2.
-	self assert: aStek isEmpty equals: [aStek size equals: 0].
+	self assert: aStek isEmpty.
 	aStek pop.
 	aStek pop.
-	self assert: aStek isEmpty equals: [aStek size equals: 0].
+	self assert: aStek isEmpty.
